@@ -1,0 +1,18 @@
+{
+  "extends": "./solidjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@entities/*": ["./src/entities/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@i18n": ["./src/i18n"],
+      "@modules/*": ["./src/modules/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "dist"],
+  "references": [{ "path": "./tsconfig.build.json" }]
+}
